@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Great+Vibes&family=Montserrat:wght@100;300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --color-deep-blue: #1b3a57;
+  --color-teal: #2d5a57;
+  --color-blush: #dcae96;
+  --color-gold: #d4af37;
+  --color-cream: #e1f5fe; /* Light Sky Blue as requested */
+  --color-white: #ffffff;
+  --color-dark: #1a1a1a;
+  
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  --transition-slow: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-medium: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Layout Helpers */
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-row { display: flex; flex-direction: row; }
+.flex-col { display: flex; flex-direction: column; }
+.text-center { text-align: center; }
+
+@media (min-width: 768px) {
+  .md-row { flex-direction: row !important; }
+  .md-row-reverse { flex-direction: row-reverse !important; }
+  .md-hidden { display: none !important; }
+  .md-flex { display: flex !important; }
+}
+
+@media (max-width: 767px) {
+  .sm-hidden { display: none !important; }
+  .sm-full { width: 100% !important; }
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.font-script { font-family: 'Great Vibes', cursive; }
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-cinzel { font-family: 'Cinzel', serif; }
+
+.section-full {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Glassy effect for sections to show background temple */
+section {
+  position: relative;
+  z-index: 10;
+  /* Correction: Allow semi-transparency but not full transparency by default */
+}
+
+/* Add a semi-transparent card-like feel for readability */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4rem;
+  padding: clamp(2rem, 5vw, 6rem);
+}
+
+.texture-canvas {
+  background-image: url("https://www.transparenttextures.com/patterns/canvas-orange.png");
+  background-blend-mode: overlay;
+}
+
+.texture-watercolor {
+  background-image: url("https://www.transparenttextures.com/patterns/watercolor.png");
+  background-blend-mode: multiply;
+}
+
+/* Meenaya Specifics */
+.oval-frame {
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  border: 4px solid var(--color-white);
+  outline: 1px solid var(--color-gold);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.card-premium {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-lg);
+  border-radius: 3rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 2.5rem;
+    --space-xl: 4.5rem;
+  }
+}
+
+/* Custom Nav Bar */
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--transition-medium);
+}
+
+.nav-scrolled {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Buttons */
+.btn-premium {
+  padding: 1.2rem 2.5rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: var(--transition-medium);
+  border: 1px solid var(--color-gold);
+  background: white;
+  color: var(--color-deep-blue);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+  border: none;
+}
+
+/* Form Styles */
+.input-premium {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding: 1.5rem 0.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: white;
+  outline: none;
+  transition: var(--transition-medium);
+}
+
+.input-premium:focus {
+  border-color: var(--color-gold);
+}
+
+select.input-premium {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+option {
+  color: #1a1a1a;
+}
+
+/* Premium Text Animations */
+.text-gradient-gold {
+  background: linear-gradient(to right, #8B6E32 20%, #d4af37 40%, #D4AF37 60%, #8B6E32 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

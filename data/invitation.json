@@ -1,0 +1,75 @@
+{
+  "couple": {
+    "groom": "VIMALRAJ",
+    "bride": "RAJINIROY",
+    "groom_info": "Son of Mr. Raj & Mrs. Geetha",
+    "bride_info": "Daughter of Mr. Roy & Mrs. Malini",
+    "invocation": "|| Sri Pachai VazhiAmman Thunai ||",
+    "blessing": "With the divine blessings of our ancestors and the almighty"
+  },
+  "wedding": {
+    "date": "2026-12-10",
+    "time": "10:30 AM",
+    "location": "MudaliyarKuppam, Tamil Nadu",
+    "venue_name": "VR Marriage Hall",
+    "venue_address": "MudaliyarKuppam, Cheyyur Taluk, Chengalpattu District, pin 603302, Tamilnadu",
+    "google_maps_url": "https://maps.app.goo.gl/Y315EkXoMMRgVrbW6?g_st=ic",
+    "hashtag": "#VimalWedsRajini"
+  },
+  "welcome_message": "We are honored to invite you to join us as we celebrate our love and begin our new journey together.",
+  "events": [
+    {
+      "id": "reception",
+      "title": "Grand Reception",
+      "date": "2026-12-09",
+      "time": "6:30 PM onwards",
+      "venue": "VR Marriage Hall",
+      "description": "An evening of celebration with family and friends."
+    },
+    {
+      "id": "wedding",
+      "title": "Holy Matrimony & Wedding",
+      "date": "2026-12-10",
+      "time": "9:30 AM - 11:30 AM",
+      "venue": "VR Marriage Hall",
+      "description": "Traditional South Indian Wedding Ceremony."
+    }
+  ],
+  "gallery": [
+    {
+      "url": "/images/couple_sketch.jpg",
+      "caption": "Sketching Our Forever"
+    },
+    {
+      "url": "/images/couple_car.jpg",
+      "caption": "Our Beautiful Journey"
+    },
+    {
+      "url": "/images/couple_stairs.jpg",
+      "caption": "Steps to Happiness"
+    },
+    {
+      "url": "/images/couple_temple.jpg",
+      "caption": "Blessings at the Temple"
+    }
+  ],
+  "rsvp": {
+    "whatsapp_number": "919876543210",
+    "deadline_date": "2026-05-10"
+  },
+  "extra_info": {
+    "dress_code": "Traditional South Indian / Formal Wear",
+    "parking": "Ample parking available at the venue",
+    "accommodation": "Accommodation arranged for outstation guests",
+    "contact": "+91 99999 99999"
+  },
+  "music": {
+    "url": "/audio/background_music.mp3",
+    "title": "Traditional Wedding Nadaswaram"
+  },
+  "timeline": [
+    { "year": "2017", "title": "The First Meeting", "description": "Where it all began—two souls found their path in each other's eyes, starting a beautiful journey." },
+    { "year": "2017 - 2026", "title": "9 Years of Love", "description": "Celebrating 9 years of pure love, laughter, and unbreakable memories—a bond that stood the test of time." },
+    { "year": "2026 - Our 10th Year", "title": "Beginning Our Forever", "description": "Joining as Husband and Wife on our 10th year celebration—continuing our eternity." }
+  ]
+}
