@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: vimal-invitation
+    env: static
+    buildCommand: npm install && npm run build
+    publishDir: out
+    # Auto-scaling not needed for static
+    # Pull Request previews optional
